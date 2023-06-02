@@ -8,6 +8,7 @@
 
 html{
     box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
 }
 
 *, *:before, *:after{
@@ -15,13 +16,26 @@ html{
 }
 
 body{
-    font-family: var(--fuentePrincipal)
-}
-h1,h2,h3{
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 /*globales*/
+h1,h2,h3{
+    font-family: var(--fuenteSecundaria);
+}
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.4rem;
+    margin: 0 0 5rem 0;
+}
 a{
     text-decoration: none;
     color: var(--negro);
@@ -38,7 +52,6 @@ img{
 }
 /*header y navegacion*/
 .nombre-sitio{
-    margin: 3rem 0;
     text-align: center;
 }
 
@@ -75,6 +88,7 @@ img{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 25rem;
 }
 /* categorias */
@@ -113,9 +127,26 @@ img{
     border-bottom-left-radius: 1rem;
 }
 .listado-imagen{
-    height: 20rem;
-    width: 20rem;
+    height: 30rem;
+    width: 30rem;
     object-fit: cover;
+}
+
+/* nosotros */
+.sobre-nosotros{
+    margin-top: 3rem;
+    background-image: linear-gradient(to right, transparent 50%, var(--primary) 50%, var(--primary) 100%), url(../img/nosotros.jpg);
+    background-position: center bottom;
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.nosotros-texto{
+    grid-column: 2 / 3;
 }
 
 
