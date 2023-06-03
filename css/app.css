@@ -50,6 +50,22 @@ img{
     max-width: 100%;
     display: block;
 }
+.btn{
+    background-color: #f38620;
+    display: block;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-weight: 900;
+    transition: background-color .3s ease-out;
+}
+.btn:hover{
+    background-color: #e16919;
+}
+/*utilidades*/
+.text-center{
+    text-align: center;
+}
+
 /*header y navegacion*/
 .nombre-sitio{
     text-align: center;
@@ -98,9 +114,6 @@ img{
     } 
 }
 
-.listado-titulo{
-    text-align: center;
-}
 .listado-categorias{
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -142,11 +155,104 @@ img{
     background-size: 100% 120%;
 }
 .sobre-nosotros-grid{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem; */
+    display: flex;
+    justify-content: flex-end;
 }
 .nosotros-texto{
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
+    flex-basis: 50%; /*ancho del elemento*/
+    padding-left: 10rem;
+    color: var(--blanco);
 }
 
 
+/*productos*/
+.productos-listado{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 4rem;
+}
+.producto:nth-child(1){
+    grid-column: 1 / 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img{
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column: 1 / 4;
+}
+.producto:nth-child(3){
+    grid-column: 4 / 7;
+}
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(4){
+    grid-column: 1 / 3;
+}
+.producto:nth-child(5){
+    grid-column: 3/ 5;
+}
+.producto:nth-child(6){
+    grid-column: 5 / 7;
+}
+.producto:nth-child(4) img,
+.producto:nth-child(5) img,
+.producto:nth-child(6) img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto{
+    background-color: var(--primary);
+}
+.producto-texto h3{
+    margin: 0;
+}
+.producto-texto{
+    text-align: center;
+    color: var(--blanco);
+    padding: 2rem;
+    
+}
+.producto-texto p{
+    margin: 0 0 .5rem 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+.producto-precio{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.producto-texto a{
+    background-color: #f38620;
+    display: block;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-weight: 900;
+    transition: background-color .3s ease-out;
+}
+.producto-texto a:hover{
+    background-color: #e16919;
+}
+.producto img{
+    transition: transform .3s ease-out
+}
+.producto img:hover{
+    transform: scale(.9);
+}
