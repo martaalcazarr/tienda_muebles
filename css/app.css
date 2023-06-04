@@ -57,6 +57,7 @@ img{
     color: var(--blanco);
     font-weight: 900;
     transition: background-color .3s ease-out;
+    text-align: center;
 }
 .btn:hover{
     background-color: #e16919;
@@ -66,6 +67,9 @@ img{
     text-align: center;
 }
 
+.max-width-30{
+    max-width: 30rem;
+}
 /*header y navegacion*/
 .nombre-sitio{
     text-align: center;
@@ -286,4 +290,33 @@ img{
     margin: 0;
     background-color: var(--primary);
     padding: 3rem;
+}
+
+/*blog*/
+.blog-contenedor{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+.blog{
+    padding-left: 4rem;
+}
+.blog-entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.blog-entrada:last-of-type{
+    border: none;
+}
+.info-blog{
+    display: flex;
+    justify-content: space-between;
+}
+.info-blog p{
+    font-weight: 700;
+}
+.info-blog span{
+    color: var(--primary);
+    font-weight: 400;
 }
