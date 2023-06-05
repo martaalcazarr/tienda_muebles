@@ -320,3 +320,9 @@ img{
     color: var(--primary);
     font-weight: 400;
 }
+
+/*entrada blog*/
+.entrada{
+   width: 60rem;
+   margin: 0 auto; 
+}
