@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Mueble</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="nombre-sitio">Doctor <span>Mueble</span> </h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-header contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+
+
+    <main class="contacto contenedor">
+        <h2 class="text-center">Contacto</h2>
+
+        <form>
+            <fieldset>
+                <legend>Tus datos</legend>
+                <div class="form-campo">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Tu nombre"/>
+                </div>
+
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Tu email" required/>
+                </div>
+
+                <div class="form-campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" placeholder="Tu telefono"/>
+                </div>
+
+                <div class="form-campo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" placeholder="Tu motivo"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de cliente</legend>
+                <div class="form-campo">
+                    <label for="tipo">Te identificas cómo:</label>
+                    <select name="tipo" id="tipo">
+                        <option disabled selected value="0">¿Qué tipo de cliente eres?</option>
+                        <option value="1">Cliente particular</option>
+                        <option value="2">Empresa</option>
+                        <option value="3">Organización sin fines de lucro</option>
+                        <option value="4">Quiero ser proveedor</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>¿Qué quieres decirnos?</legend>
+                <div class="form-campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea rows="10" id="mensaje" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de mensaje</legend>
+                <div class="form-campo">
+                    <label for="consulta">Consulta</label>
+                    <input type="radio" id="consulta" name="tipo">
+                </div>
+
+                <div class="form-campo">
+                    <label for="sugerencia">Sugerencia</label>
+                    <input type="radio" id="sugerencia" name="tipo">
+                </div>
+
+                <div class="form-campo">
+                    <label for="reclamo">Reclamo</label>
+                    <input type="radio" id="reclamo" name="tipo">
+
+                </div>
+
+                <div class="form-campo">
+                    <label for="categoria">Categoría de interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Hogar">
+                        <option value="Oficina">
+                        <option value="Exterior">
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-nav">
+                    <a href="#">Hogar</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Exteriores</a>
+                </nav>
+            </div>
+    
+            <div>
+                <h3>Blog</h3>
+                <nav class="footer-nav">
+                    <a href="#">Cómo elegir la madera ideal</a>
+                    <a href="#">Mantenimiento de muebles de madera</a>
+                    <a href="#">Las ventajas de los muebles de madera</a>
+                    <a href="#">Cómo darle vida a tu hogar con madera</a>
+                </nav>
+            </div>
+    
+            <div>
+                <h3>Nosotros</h3>
+                <nav class="footer-nav">
+                    <a href="#">Tiendas</a>
+                    <a href="#">Medios de pago</a>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Compras por mayor</a>
+                </nav>
+                
+            </div>
+        </div>
+        
+
+        <p class="copyright">Doctor Mueble - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

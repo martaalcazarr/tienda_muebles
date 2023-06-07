@@ -274,6 +274,7 @@ img{
 .grid-footer{
     display: flex;
     margin-bottom: 3rem;
+    padding-left: 3rem;
 }
 .grid-footer div{
     flex: 1; /*factor de crecimiento */
